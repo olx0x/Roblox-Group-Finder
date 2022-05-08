@@ -7,7 +7,7 @@ ctypes.windll.kernel32.SetConsoleTitleW("Aleks Group Finder")
 
 
 def groupfinder():
-    id = random.randint(1000000, 1150000)
+    id = random.randint(4273924, 100000000)
     r = requests.get(f"https://www.roblox.com/groups/group.aspx?gid={id}") 
     if 'owned' not in r.text:
         re = requests.get(f"https://groups.roblox.com/v1/groups/{id}")
